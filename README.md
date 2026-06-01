@@ -1,7 +1,6 @@
 # blogs
 
 
-```markdown
 # 🌊 海斯分享
 
 一个基于 GitHub Pages 的静态资源分享网站，专注于分享教程、应用资源和其他实用资料。
@@ -13,7 +12,7 @@
 - **📦 应用** - 游戏、软件、系统安装包资源
 - **📚 其他** - 图片、小说、视频、网站导航等资料
 
-**访问地址**：https://haisi-ai.github.io/blogs/ 或 https://haisi.cc
+**访问地址**：https://haisi.cc
 
 ---
 
@@ -35,63 +34,61 @@
    - 例如：`python-tutorial.html`
 
 2. **复制模板内容**
-   ```html
-   <!DOCTYPE html>
-   <html lang="zh-CN">
-   <head>
-       <meta charset="UTF-8">
-       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <title>文章标题 - 海斯分享</title>
-       <link rel="stylesheet" href="../css/style.css">
-   </head>
-   <body>
-       <header class="header">
-           <!-- 头部导航保持不变 -->
-       </header>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文章标题 - 海斯分享</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="header">
+        <!-- 头部导航保持不变 -->
+    </header>
 
-       <main class="article-container">
-           <article>
-               <div class="article-header">
-                   <h1 class="article-title">文章标题</h1>
-                   <div class="article-meta">
-                       <span>📅 日期</span>
-                       <span>👤 海斯</span>
-                       <span>🏷️ 分类标签</span>
-                   </div>
-               </div>
-               
-               <div class="article-content">
-                   <!-- 文章正文内容 -->
-               </div>
-               
-               <!-- 评论区 -->
-               <div class="comments-section">
-                   <h3>💬 评论区</h3>
-                   <script src="https://giscus.app/client.js"
-                       data-repo="haisi-ai/blogs"
-                       data-repo-id="R_kgDORwBnLg"
-                       data-category="Announcements"
-                       data-category-id="DIC_kwDORwBnLs4C5OQ7"
-                       data-mapping="pathname"
-                       data-strict="0"
-                       data-reactions-enabled="1"
-                       data-emit-metadata="0"
-                       data-input-position="bottom"
-                       data-theme="preferred_color_scheme"
-                       data-lang="zh-CN"
-                       crossorigin="anonymous"
-                       async>
-                   </script>
-               </div>
-           </article>
-       </main>
+    <main class="article-container">
+        <article>
+            <div class="article-header">
+                <h1 class="article-title">文章标题</h1>
+                <div class="article-meta">
+                    <span>📅 日期</span>
+                    <span>👤 海斯</span>
+                    <span>🏷️ 分类标签</span>
+                </div>
+            </div>
+            
+            <div class="article-content">
+                <!-- 文章正文内容 -->
+            </div>
+            
+            <!-- 评论区 -->
+            <div class="comments-section">
+                <h3>💬 评论区</h3>
+                <script src="https://giscus.app/client.js"
+                    data-repo="haisi-ai/haisi-ai.github.io"
+                    data-repo-id="R_kgDORwBnLg"
+                    data-category="Announcements"
+                    data-category-id="DIC_kwDORwBnLs4C5OQ7"
+                    data-mapping="pathname"
+                    data-strict="0"
+                    data-reactions-enabled="1"
+                    data-emit-metadata="0"
+                    data-input-position="bottom"
+                    data-theme="preferred_color_scheme"
+                    data-lang="zh-CN"
+                    crossorigin="anonymous"
+                    async>
+                </script>
+            </div>
+        </article>
+    </main>
 
-       <footer class="footer">
-           <!-- 页脚保持不变 -->
-       </footer>
-   </body>
-   </html>
-   ```
+    <footer class="footer">
+        <!-- 页脚保持不变 -->
+    </footer>
+</body>
+</html>
 
 3. **添加文章到首页**
    - 打开 `index.html`
@@ -205,8 +202,8 @@
 - 引用路径：`images/图片名.jpg`
 
 ### 5. Giscus 评论区
-- 评论区配置在 `data-repo="haisi-ai/blogs"`
-- 确保 GitHub 仓库 `haisi-ai/blogs` 已开启 Discussions
+- 评论区配置在 `data-repo="haisi-ai/haisi-ai.github.io"`
+- 确保 GitHub 仓库 `haisi-ai/haisi-ai.github.io` 已开启 Discussions
 - 评论数据自动同步到 GitHub Discussions
 
 ---
@@ -242,8 +239,8 @@
 
 1. **首次部署**
    ```bash
-   git clone https://github.com/haisi-ai/blogs.git
-   cd blogs
+   git clone https://github.com/haisi-ai/haisi-ai.github.io.git
+   cd haisi-ai.github.io
    # 添加所有文件
    git add .
    git commit -m "初始化网站"
@@ -278,4 +275,14 @@
 *最后更新：2026年3月25日*
 ```
 
+### 主要更新内容说明：
+1. **访问地址**：移除旧的 `https://haisi-ai.github.io/blogs/`，仅保留自定义域名 `https://haisi.cc`
+2. **仓库地址**：
+   - 克隆地址更新为 `https://github.com/haisi-ai/haisi-ai.github.io.git`
+   - Giscus 评论区的 `data-repo` 改为 `haisi-ai/haisi-ai.github.io`
+   - 评论区说明中的仓库名称同步更新
+3. **部署说明**：
+   - 克隆命令中的仓库目录改为 `haisi-ai.github.io`
+   - 自定义域名部分标注“已配置”，符合当前 DNS 指向 `haisi.cc` 的现状
+4. 所有链接和引用均已适配新的仓库地址和域名，确保一致性。
 
